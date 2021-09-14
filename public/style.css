@@ -1,8 +1,39 @@
 body {
-	background-color: greenyellow;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background-color: #CAF0F8;
+	/* background-color: greenyellow;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
+.container h1{
+	text-align: center;
+	
+}
+
+.main {
+ background-color: lawngreen;
+
+} 
+
+.pizzza {
+	display: flex;
+}
+/* /* 
+.Large {
+	background-color: chocolate;
+	margin-left: 2%
+	 ;
+}
+
+.Meduim {
+	background-color: yellow;
+	margin-left: 2%
+}
+
+.Small{
+	background-color: darkgreen;
+	margin-left: 2%
+}  */
+/*  */
 .container {
 	margin: auto;
 	background-color: honeydew;
@@ -11,11 +42,11 @@ body {
 }
 
 
-.counter {
+ .counter {
 	background-color: lightgray;
 	font-size: 2em;
 	width: 3em;
 	text-align: center;
 	padding: 0.5em;
 	margin-bottom: 0.25em;
-}
+} /*

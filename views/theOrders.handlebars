@@ -1,0 +1,21 @@
+<div class="list">
+    <h1>Orders</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>OrderId</th>
+            <th>Status</th>
+            <th>Amount</th>
+        </tr>
+        {{#each actions}}
+        <tr>
+            <td>{{type}}</td>
+            <td>{{'#'}}</td>
+            <td>{{"payment due"}}</td>
+             <td>{{totalPrice}}</td>
+        </tr>
+        {{/each}}
+
+    </table>
+</div>
