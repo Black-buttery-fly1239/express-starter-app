@@ -23,12 +23,7 @@ module.exports = function pizza() {
          }
       }
       
-      pizzaList.push({
-         name: type,
-         orderId: '#' + pizzaList.length +1 *3,
-         Status: "payment due",
-         Amount: totalPrice,
-      })
+     
 // console.log(pizzaList);
    }
    function amaPizza(type) {
@@ -54,17 +49,24 @@ module.exports = function pizza() {
 
 
 
-   function totals() {
-      let smallTotal = addTotal('small').toFixed(2)
-      let meduimTotal = addTotal('medium').toFixed(2)
-      let largeTotal = addTotal('large').toFixed(2)
-      return {
-         smallTotal,
-         meduimTotal,
-         largeTotal,
-         totalPrice: getPizza().toFixed(2)
-      }
-   }
+   // function totals() {
+   //    pizzaList.push({
+   //       // name: type,
+   //       orderId: '#' + pizzaList.length +1 *3,
+   //       Status: "payment due",
+   //       Amount: totalPrice,
+   //    })
+      // return pizzaList
+      // let smallTotal = addTotal('small').toFixed(2)
+      // let meduimTotal = addTotal('medium').toFixed(2)
+      // let largeTotal = addTotal('large').toFixed(2)
+      // return {
+      //    smallTotal,
+      //    meduimTotal,
+      //    largeTotal,
+      //    totalPrice: getPizza().toFixed(2)
+      // }
+   // }
 
    function getPizza() {
       return totalPrice
@@ -75,14 +77,16 @@ module.exports = function pizza() {
       return pizzaList
    }
 
-   function Detail(order){
-      if(order === 'small'|| order === 'medium'|| order === 'large'){
+   function Detail(type){
+      // if(type === 'small'|| type === 'medium'|| type === 'large'){
        pizzaList.push({
-          orderId:
-          Status,
-          Amount: totalPrice,
+         name: type,
+         orderId: '#' + pizzaList.length +1 *3,
+         Status: "payment due",
+         Amount: totalPrice,
        })
-      }
+      // }
+      return pizzaList;
    }
 
 //    function actions() {
@@ -93,7 +97,7 @@ module.exports = function pizza() {
       getPizza,
       Detail,
       // actions,
-      totals,
+      // totals,
       addTotal,
       pizza,
       amaPizza,

@@ -12,82 +12,85 @@
 <body>
     <div class="container">
         <h1>Perfect Pizza</h1>
-    </div>
-    <div class="main">
-        {{!-- <form action="/action" method="POST"> --}}
+<hr>
+        <div class="main">
+            {{!-- <form action="/action" method="POST"> --}}
 
-            <div class="shopping">
-                <h2>Shopping Cart</h2>
-                <img src="" alt="">
-            </div>
-            <div>
-                <table class="order">
-                    <tr>
-                        <td><strong>Small:</strong></td>
-                        <td>R<span class="smallTotalPrice" name="small">{{small}}</span></td>
-                    </tr>
+                <div class="shopping">
+                    <h2>Shopping Cart</h2>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <table class="order">
+                        <tr>
+                            <td><strong>Small:</strong></td>
+                            <td>R<span class="smallTotalPrice" name="small">{{small}}</span></td>
+                        </tr>
 
-                    <tr>
-                        <td><strong>Large:</strong></td>
-                        <td>R<span class="mediumTotal" name="medium">{{medium}}</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Medium:</strong></td>
-                        <td>R<span class="largeTotalPrice" name="large">{{large}}</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Total price</strong></td>
-                        <td>R<span class="totalPrice" name="">{{total}}</span></td>
-                    </tr>
-                </table>
-                
-            </div>
-            <form action="theOrder" method="GET">
-                <button class="" type="submit" name="button">Order</button>
-            </form>
-      </div>
-    {{!-- </form><br> --}}
-    <br>
+                        <tr>
+                            <td><strong>Large:</strong></td>
+                            <td>R<span class="mediumTotal" name="medium">{{medium}}</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Medium:</strong></td>
+                            <td>R<span class="largeTotalPrice" name="large">{{large}}</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total price</strong></td>
+                            <td>R<span class="totalPrice" name="">{{total}}</span></td>
+                        </tr>
+                    </table>
 
-
-    <div class="pizzza">
-     <form action="/action" method="POST">
-     
-        <div class="Large">
-            <img src="pizza.png" alt="">
-
-            <h3>Large Pizza</h3>
-            <strong>R87.99</strong>
-
-            <p>Large margeritha pizza with 3 toppings max. 3 meat toppings max. 3 or less other toppings.</p>
-            <input type="submit" name="pizzaType"  value="large">
-        </div><br>
-
-        <div class="Meduim">
-            <img src="pizza.png" alt="">
-            <h3>Meduim Pizza</h3>
-            <strong>R58.99</strong>
-
-            <p>Medium margeritha pizza with 3 toppings max. 2 or less meat toppings max. 3 or less other toppings.
-            </p>
-            <input type="submit" name="pizzaType" value="medium">
+                </div>
+                <form action="theOrder" method="GET">
+                    <button class="" type="submit" name="button">Order</button>
+                </form>
         </div>
-     
-        <div class="Small">
-            <img src="pizza.png" alt="">
-            <h3>Small Pizza</h3>
-            <strong>R31.99</strong>
-            <p>Small pizza with 3 toppings.3 or less other toppings</p>
-            <input type="submit" name="pizzaType" value="small">
-        </div>
-
-     </form> <br>
+        {{!-- </form><br> --}}
         <br>
 
 
-        <div class="contact">
+        <div class="amaPizza">
+            <form action="/action" method="POST">
 
+                <div class="Large">
+                    {{!-- <img src="pizza.png" alt=""> --}}
+
+                    <h3>Large Pizza</h3>
+                    <strong>R87.99</strong>
+
+                    <p>Large margeritha pizza with 3 toppings max. 3 meat toppings max. 3 or less other toppings.</p>
+                    <input type="submit" name="pizzaType" value="large">
+                </div><br>
+
+                <div class="Meduim">
+                    {{!-- <img src="pizza.png" alt=""> --}}
+                    <h3>Meduim Pizza</h3>
+                    <strong>R58.99</strong>
+
+                    <p>Medium margeritha pizza with 3 toppings max. 2 or less meat toppings max. 3 or less other
+                        toppings.
+                    </p>
+                    <input type="submit" name="pizzaType" value="medium">
+                </div>
+
+                <div class="Small">
+                    {{!-- <img src="pizza.png" alt=""> --}}
+                    <h3>Small Pizza</h3>
+                    <strong>R31.99</strong>
+                    <p>Small pizza with 3 toppings.3 or less other toppings</p>
+                    <input type="submit" name="pizzaType" value="small">
+                </div>
+
+            </form> <br>
+            <br>
+
+
+            <div class="contact">
+
+            </div>
         </div>
+
     </div>
 </body>
 

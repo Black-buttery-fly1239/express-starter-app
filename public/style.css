@@ -1,11 +1,28 @@
 body {
 	background-color: #CAF0F8;
-	/* background-color: greenyellow;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
 }
 
-.container h1{
+.container {
+	margin: auto;
+	background-color: honeydew;
+	width: 80%;
+	padding: 1em;
+}
+
+.container h1 {
 	text-align: center;
+}
+
+ .amaPizza {
+	display: flex;
+	/* flex-wrap: wrap; */
+  }
+
+/* .amaPizza {
+	display: flex;
+} */
+/* .container h1{
 	
 }
 
@@ -16,7 +33,7 @@ body {
 
 .pizzza {
 	display: flex;
-}
+} */
 /* /* 
 .Large {
 	background-color: chocolate;
@@ -34,19 +51,13 @@ body {
 	margin-left: 2%
 }  */
 /*  */
-.container {
-	margin: auto;
-	background-color: honeydew;
-	width: 80%;
-	padding: 1em;
-}
 
 
- .counter {
+ /* .counter {
 	background-color: lightgray;
 	font-size: 2em;
 	width: 3em;
 	text-align: center;
 	padding: 0.5em;
 	margin-bottom: 0.25em;
-} /*
+} /* */

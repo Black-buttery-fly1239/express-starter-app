@@ -27,11 +27,6 @@ app.use(express.urlencoded({ extended: false }));
 // enable the static folder...
 app.use(express.static('public'));
 
-// app.use(session({
-// 	secret: ' ',
-// 	resave: false,
-// 	saveUninitialized: true
-// }));
 
 // add more middleware to allow for templating support
 
@@ -53,11 +48,10 @@ app.get('/', function (req, res) {
 		medium: pizzaperfect.getLargePizza(),
         large: pizzaperfect.getMediumPizza(),
 	});
-	// console.log(getPizza());
+	
 });
 
 app.post('/action', function (req, res) {
-    // console.log(req.body.actionType);
 
     pizzaperfect.addTotal(req.body.pizzaType)
     res.redirect('/');
@@ -66,16 +60,13 @@ app.post('/action', function (req, res) {
 });
 
 app.get('/theOrder', function (req, res){
-	// const theActions = pizzaperfect.Detail(),
+	
 	console.log(pizzaperfect.pizza());
 res.render('theOrders', {
-    actions: pizzaperfect.Detail(pizzaperfect.pizza())
-});
-// console.log(Detail());
+    actions: pizzaperfect.Detail(),
 });
 
-
-
+});
 
 app.post('/pizza', function (req, res) {
     // console.log(req.body.actionType);
@@ -84,6 +75,18 @@ app.post('/pizza', function (req, res) {
     res.redirect('/');
     
 });
+
+app.listen(PORT, function () {
+	console.log(`App started on port ${PORT}`)
+});
+
+
+
+
+
+
+
+
 
 // app.post('/count', function (req, res) {
 
@@ -100,6 +103,3 @@ app.post('/pizza', function (req, res) {
 // 	res.redirect('/')
 // });
 // start  the server and start listening for HTTP request on the PORT number specified...
-app.listen(PORT, function () {
-	console.log(`App started on port ${PORT}`)
-});
